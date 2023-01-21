@@ -9,6 +9,6 @@
         when: ansible_os_family=="Debian"
       - name: i want to install java jdk8 on redhat 
         yum:
-            name: "{{myapache2onredhat}}"
+            name: "{{myjavajdk8onredhat}}"
             state: present 
         when: ansible_os_family=="RedHat"          
