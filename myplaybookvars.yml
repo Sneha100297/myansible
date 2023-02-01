@@ -15,7 +15,7 @@
         name: "{{item}}"
         state: present 
       when: ansible_os_family=="Debian"     
-      loop:
+  loop:
        -"{{myvar1}}"
        -"{{myvar2}}"
        -"{{myvar3}}"
