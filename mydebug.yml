@@ -1,5 +1,5 @@
 ---
-- hosts: 18.183.244.222
+- hosts: 13.115.162.111
   become: yes
   tasks:
       - name: i want to execute linux cmd 
@@ -9,15 +9,15 @@
       - name: i want to display linux output 
         debug:
             msg: "{{myresult}}"  
-            
+
 - name: i want to install tree 
   apt:
     name: tree 
     state: present 
-  when: myresult.stderr==" "
+  when: myresult.stderr==""
 
 - name: i want to install wget 
   apt: 
     name: wget 
     state: present 
-  when: myresult.stderr!=" "      
+  when: myresult.stderr!=""      
