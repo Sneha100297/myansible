@@ -2,6 +2,7 @@
 172.31.32.129
 172.31.37.29
 172.31.15.152
+18.183.244.222
 
 [mywebserver:vars]
 myjavajdk8onubuntu=openjdk-8-jdk
